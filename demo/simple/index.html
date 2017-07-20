@@ -12,40 +12,49 @@
     <script src="demoFunctions.js"></script>
 
     <style>
+        html, body {
+            height: 90%;
+            margin: 0;
+            padding: 0;
+        }
         #placeholder {
             text-align: center;
             margin-top: 1.5em;
         }
         #main-wrapper {
             display: none;
+            padding: 0;
+            overflow: scroll;
+            overflow-x: hidden;
+            height: 95%;        
+            align-items:center;
         }
         .clearfix {
             clear: both;
         }
+  
     </style>
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <h5>SMART BOT</h5>
+        <h5 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><img src="images\logo.png" style="height:30px ; width:45px"/>Smart bot</h5>
     </div>
 </div>
-<div id="placeholder">
-   
-</div>
+
 <div id="main-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col s10">
-                <div class="input-field">
-                    <input placeholder="Hey, ask me something..." id="q" type="text" >
-                </div>
+            <div class="col s12">              
                 <div id="result">
-                    <!--div class="left-align flow-text">test</div>
-                    <div class="right-align flow-text">one more test</div-->
-                </div>
+                    <!--<div class="left-align flow-text">test</div>
+                    <div class="right-align flow-text">one more test</div>-->
+                </div>               
             </div>
-            <div class="col s5"></div>
+            <div class="input-field">
+                <input placeholder="Hey, ask me something..." id="q" type="text">
+            </div>
+            <div class="col s2"></div>
             <div class="col s5">
             <!--<h5>Request payload:</h5>
             <pre id="jsonRequest"></pre>-->
@@ -55,6 +64,9 @@
         </div>
     </div>
 </div>
+    <div id="placeholder">
+
+    </div>
 <script defer src="layout.js"></script>
 </body>
 </html>

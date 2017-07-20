@@ -50,6 +50,7 @@
     node.className = "clearfix left-align left card-panel green accent-1";
     node.innerHTML = query;
     resultDiv.appendChild(node);
+    scrollDown();
   }
 
   function createResponseNode() {
@@ -57,19 +58,26 @@
     node.className = "clearfix right-align right card-panel blue-text text-darken-2 hoverable";
     node.innerHTML = "...";
     resultDiv.appendChild(node);
+    scrollDown();
     return node;
   }
 
   function setResponseOnNode(response, node) {
     node.innerHTML = response ? response : "[empty response]";
     node.setAttribute('data-actual-response', response);
+    scrollDown();
   }
 
   function setResponseJSON(response) {
     var node = document.getElementById("jsonResponse");
     //node.innerHTML = JSON.stringify(response, null, 2);
+    scrollDown();
   }
 
+  function scrollDown() {
+      var elem = document.getElementById("main-wrapper");
+      elem.scrollTop = elem.scrollHeight;
+  }
   function sendRequest() {
 
   }
