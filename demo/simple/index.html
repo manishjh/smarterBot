@@ -19,15 +19,16 @@
         }
         #placeholder {
             text-align: center;
-            margin-top: 1.5em;
+            margin-bottom: 1.5em;
         }
         #main-wrapper {
             display: none;
             padding: 0;
             overflow: scroll;
             overflow-x: hidden;
-            height: 95%;        
+            height: 80%;        
             align-items:center;
+            padding-top:5%;
         }
         .clearfix {
             clear: both;
@@ -38,7 +39,10 @@
 <body>
 <div class="container">
     <div class="row">
-        <h5 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><img src="images\logo.png" style="height:30px ; width:45px"/>Smart bot</h5>
+        <h5 style="padding-top:5%;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+        <img src="images\logo.png" style="height:30px ; width:45px"/>
+        Smart bot
+        </h5>
     </div>
 </div>
 
@@ -51,9 +55,7 @@
                     <div class="right-align flow-text">one more test</div>-->
                 </div>               
             </div>
-            <div class="input-field">
-                <input placeholder="Hey, ask me something..." id="q" type="text">
-            </div>
+
             <div class="col s2"></div>
             <div class="col s5">
             <!--<h5>Request payload:</h5>
@@ -64,6 +66,9 @@
         </div>
     </div>
 </div>
+    <div style="width:85%;align-content:center;padding-left:15%;padding-bottom:7%"class="input-field">
+        <input placeholder="Hey, ask me something..." id="q" type="text">
+    </div>
     <div id="placeholder">
 
     </div>
